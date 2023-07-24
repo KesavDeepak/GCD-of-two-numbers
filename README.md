@@ -11,19 +11,26 @@ To write a program to find the GCD of two numbers using function.
 1. Define a function.
 2. Get the two numbers from the user.
 3. Compare the two values, to find the smaller number.
-4. Use for() and if() loop to find the GCD of the two numbers.
+4. Use for() loop from 1 to the smaller number and if() statement to find whether the two numbers a number is divisible by two numbers.
+5. End the program.
 
 ## Program:
-```
-/*
-Program to find the gcd of two number using function.
-Developed by: 
-RegisterNumber:  
-*/
+```python
+#The GCD of a number using function
+#Developed by: KESAV DEEPAK SRIDHARAN
+#Register Number:23002011
+def gcd():
+    gcd1 = 0
+    a = int(input())
+    b = int(input())
+    for i in range(1,min(a,b)):
+        if a%i==0 and b%i==0:
+            gcd1 = i
+    print('GCD of two numbers is:',gcd1)
 ```
 
 ## Output:
-![gcd of two number](gcd.png)
+![gcd of two number](out.png)
 
 
 ## Result:
